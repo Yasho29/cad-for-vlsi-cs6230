@@ -1,0 +1,1082 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -input_pins
+        -nets
+        -group i2f
+        -max_paths 20
+        -transition_time
+        -capacitance
+Design : mkNoc
+Version: U-2022.12
+Date   : Sat Oct 10 07:46:30 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss0p72v125c   Library: saed14rvt_base_ss0p72v125c
+Wire Load Model Mode: top
+
+  Startpoint: EN_node_2_3_mav_get_packet
+              (input port clocked by CLK)
+  Endpoint: routers_2_3_out_q_4/data0_reg_reg_22_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: i2f
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkNoc              140000                saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  input external delay                                                        0.40       0.40 r
+  EN_node_2_3_mav_get_packet (in)                                   0.00      0.00       0.40 r
+  EN_node_2_3_mav_get_packet (net)              3         0.01                0.00       0.40 r
+  routers_2_3_out_q_4/DEQ (FIFO2_0000010c_0_40)                               0.00       0.40 r
+  routers_2_3_out_q_4/DEQ (net)                           0.01                0.00       0.40 r
+  routers_2_3_out_q_4/U29/A (SAEDRVT14_INV_S_2)                     0.00      0.00       0.40 r
+  routers_2_3_out_q_4/U29/X (SAEDRVT14_INV_S_2)                     0.05      0.03       0.43 f
+  routers_2_3_out_q_4/n389 (net)                4         0.02                0.00       0.43 f
+  routers_2_3_out_q_4/U28/A2 (SAEDRVT14_NR2_MM_6)                   0.05      0.00       0.44 f
+  routers_2_3_out_q_4/U28/X (SAEDRVT14_NR2_MM_6)                    0.11      0.06       0.50 r
+  routers_2_3_out_q_4/n342 (net)                6         0.03                0.00       0.50 r
+  routers_2_3_out_q_4/U65/A (SAEDRVT14_BUF_4)                       0.11      0.00       0.50 r
+  routers_2_3_out_q_4/U65/X (SAEDRVT14_BUF_4)                       0.06      0.08       0.58 r
+  routers_2_3_out_q_4/n325 (net)                7         0.04                0.00       0.58 r
+  routers_2_3_out_q_4/U20/A (SAEDRVT14_BUF_6)                       0.06      0.00       0.58 r
+  routers_2_3_out_q_4/U20/X (SAEDRVT14_BUF_6)                       0.16      0.15       0.73 r
+  routers_2_3_out_q_4/n337 (net)               16         0.18                0.00       0.73 r
+  routers_2_3_out_q_4/U10/A (SAEDRVT14_BUF_6)                       0.16      0.01       0.74 r
+  routers_2_3_out_q_4/U10/X (SAEDRVT14_BUF_6)                       0.12      0.14       0.88 r
+  routers_2_3_out_q_4/n287 (net)               14         0.14                0.00       0.88 r
+  routers_2_3_out_q_4/U131/B1 (SAEDRVT14_AO222_1)                   0.12      0.01       0.89 r
+  routers_2_3_out_q_4/U131/X (SAEDRVT14_AO222_1)                    0.03      0.08       0.97 r
+  routers_2_3_out_q_4/N264 (net)                1         0.00                0.00       0.97 r
+  routers_2_3_out_q_4/data0_reg_reg_22_/D (SAEDRVT14_FDP_V2_1)      0.03      0.00       0.97 r
+  data arrival time                                                                      0.97
+
+  clock CLK (rise edge)                                                       1.00       1.00
+  clock network delay (ideal)                                                 0.00       1.00
+  routers_2_3_out_q_4/data0_reg_reg_22_/CK (SAEDRVT14_FDP_V2_1)               0.00       1.00 r
+  library setup time                                                         -0.03       0.97
+  data required time                                                                     0.97
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.97
+  data arrival time                                                                     -0.97
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+  Startpoint: EN_node_2_3_mav_get_packet
+              (input port clocked by CLK)
+  Endpoint: routers_2_3_out_q_4/data0_reg_reg_21_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: i2f
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkNoc              140000                saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  input external delay                                                        0.40       0.40 r
+  EN_node_2_3_mav_get_packet (in)                                   0.00      0.00       0.40 r
+  EN_node_2_3_mav_get_packet (net)              3         0.01                0.00       0.40 r
+  routers_2_3_out_q_4/DEQ (FIFO2_0000010c_0_40)                               0.00       0.40 r
+  routers_2_3_out_q_4/DEQ (net)                           0.01                0.00       0.40 r
+  routers_2_3_out_q_4/U29/A (SAEDRVT14_INV_S_2)                     0.00      0.00       0.40 r
+  routers_2_3_out_q_4/U29/X (SAEDRVT14_INV_S_2)                     0.05      0.03       0.43 f
+  routers_2_3_out_q_4/n389 (net)                4         0.02                0.00       0.43 f
+  routers_2_3_out_q_4/U28/A2 (SAEDRVT14_NR2_MM_6)                   0.05      0.00       0.44 f
+  routers_2_3_out_q_4/U28/X (SAEDRVT14_NR2_MM_6)                    0.11      0.06       0.50 r
+  routers_2_3_out_q_4/n342 (net)                6         0.03                0.00       0.50 r
+  routers_2_3_out_q_4/U65/A (SAEDRVT14_BUF_4)                       0.11      0.00       0.50 r
+  routers_2_3_out_q_4/U65/X (SAEDRVT14_BUF_4)                       0.06      0.08       0.58 r
+  routers_2_3_out_q_4/n325 (net)                7         0.04                0.00       0.58 r
+  routers_2_3_out_q_4/U20/A (SAEDRVT14_BUF_6)                       0.06      0.00       0.58 r
+  routers_2_3_out_q_4/U20/X (SAEDRVT14_BUF_6)                       0.16      0.15       0.73 r
+  routers_2_3_out_q_4/n337 (net)               16         0.18                0.00       0.73 r
+  routers_2_3_out_q_4/U10/A (SAEDRVT14_BUF_6)                       0.16      0.01       0.74 r
+  routers_2_3_out_q_4/U10/X (SAEDRVT14_BUF_6)                       0.12      0.14       0.88 r
+  routers_2_3_out_q_4/n287 (net)               14         0.14                0.00       0.88 r
+  routers_2_3_out_q_4/U99/B1 (SAEDRVT14_AO222_1)                    0.12      0.01       0.89 r
+  routers_2_3_out_q_4/U99/X (SAEDRVT14_AO222_1)                     0.03      0.08       0.97 r
+  routers_2_3_out_q_4/N265 (net)                1         0.00                0.00       0.97 r
+  routers_2_3_out_q_4/data0_reg_reg_21_/D (SAEDRVT14_FDP_V2_1)      0.03      0.00       0.97 r
+  data arrival time                                                                      0.97
+
+  clock CLK (rise edge)                                                       1.00       1.00
+  clock network delay (ideal)                                                 0.00       1.00
+  routers_2_3_out_q_4/data0_reg_reg_21_/CK (SAEDRVT14_FDP_V2_1)               0.00       1.00 r
+  library setup time                                                         -0.03       0.97
+  data required time                                                                     0.97
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.97
+  data arrival time                                                                     -0.97
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+  Startpoint: EN_node_2_3_mav_get_packet
+              (input port clocked by CLK)
+  Endpoint: routers_2_3_out_q_4/data0_reg_reg_20_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: i2f
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkNoc              140000                saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  input external delay                                                        0.40       0.40 r
+  EN_node_2_3_mav_get_packet (in)                                   0.00      0.00       0.40 r
+  EN_node_2_3_mav_get_packet (net)              3         0.01                0.00       0.40 r
+  routers_2_3_out_q_4/DEQ (FIFO2_0000010c_0_40)                               0.00       0.40 r
+  routers_2_3_out_q_4/DEQ (net)                           0.01                0.00       0.40 r
+  routers_2_3_out_q_4/U29/A (SAEDRVT14_INV_S_2)                     0.00      0.00       0.40 r
+  routers_2_3_out_q_4/U29/X (SAEDRVT14_INV_S_2)                     0.05      0.03       0.43 f
+  routers_2_3_out_q_4/n389 (net)                4         0.02                0.00       0.43 f
+  routers_2_3_out_q_4/U28/A2 (SAEDRVT14_NR2_MM_6)                   0.05      0.00       0.44 f
+  routers_2_3_out_q_4/U28/X (SAEDRVT14_NR2_MM_6)                    0.11      0.06       0.50 r
+  routers_2_3_out_q_4/n342 (net)                6         0.03                0.00       0.50 r
+  routers_2_3_out_q_4/U65/A (SAEDRVT14_BUF_4)                       0.11      0.00       0.50 r
+  routers_2_3_out_q_4/U65/X (SAEDRVT14_BUF_4)                       0.06      0.08       0.58 r
+  routers_2_3_out_q_4/n325 (net)                7         0.04                0.00       0.58 r
+  routers_2_3_out_q_4/U20/A (SAEDRVT14_BUF_6)                       0.06      0.00       0.58 r
+  routers_2_3_out_q_4/U20/X (SAEDRVT14_BUF_6)                       0.16      0.15       0.73 r
+  routers_2_3_out_q_4/n337 (net)               16         0.18                0.00       0.73 r
+  routers_2_3_out_q_4/U10/A (SAEDRVT14_BUF_6)                       0.16      0.01       0.74 r
+  routers_2_3_out_q_4/U10/X (SAEDRVT14_BUF_6)                       0.12      0.14       0.88 r
+  routers_2_3_out_q_4/n287 (net)               14         0.14                0.00       0.88 r
+  routers_2_3_out_q_4/U133/B1 (SAEDRVT14_AO222_1)                   0.12      0.01       0.89 r
+  routers_2_3_out_q_4/U133/X (SAEDRVT14_AO222_1)                    0.03      0.08       0.97 r
+  routers_2_3_out_q_4/N266 (net)                1         0.00                0.00       0.97 r
+  routers_2_3_out_q_4/data0_reg_reg_20_/D (SAEDRVT14_FDP_V2_1)      0.03      0.00       0.97 r
+  data arrival time                                                                      0.97
+
+  clock CLK (rise edge)                                                       1.00       1.00
+  clock network delay (ideal)                                                 0.00       1.00
+  routers_2_3_out_q_4/data0_reg_reg_20_/CK (SAEDRVT14_FDP_V2_1)               0.00       1.00 r
+  library setup time                                                         -0.03       0.97
+  data required time                                                                     0.97
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.97
+  data arrival time                                                                     -0.97
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+  Startpoint: EN_node_2_3_mav_get_packet
+              (input port clocked by CLK)
+  Endpoint: routers_2_3_out_q_4/data0_reg_reg_19_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: i2f
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkNoc              140000                saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  input external delay                                                        0.40       0.40 r
+  EN_node_2_3_mav_get_packet (in)                                   0.00      0.00       0.40 r
+  EN_node_2_3_mav_get_packet (net)              3         0.01                0.00       0.40 r
+  routers_2_3_out_q_4/DEQ (FIFO2_0000010c_0_40)                               0.00       0.40 r
+  routers_2_3_out_q_4/DEQ (net)                           0.01                0.00       0.40 r
+  routers_2_3_out_q_4/U29/A (SAEDRVT14_INV_S_2)                     0.00      0.00       0.40 r
+  routers_2_3_out_q_4/U29/X (SAEDRVT14_INV_S_2)                     0.05      0.03       0.43 f
+  routers_2_3_out_q_4/n389 (net)                4         0.02                0.00       0.43 f
+  routers_2_3_out_q_4/U28/A2 (SAEDRVT14_NR2_MM_6)                   0.05      0.00       0.44 f
+  routers_2_3_out_q_4/U28/X (SAEDRVT14_NR2_MM_6)                    0.11      0.06       0.50 r
+  routers_2_3_out_q_4/n342 (net)                6         0.03                0.00       0.50 r
+  routers_2_3_out_q_4/U65/A (SAEDRVT14_BUF_4)                       0.11      0.00       0.50 r
+  routers_2_3_out_q_4/U65/X (SAEDRVT14_BUF_4)                       0.06      0.08       0.58 r
+  routers_2_3_out_q_4/n325 (net)                7         0.04                0.00       0.58 r
+  routers_2_3_out_q_4/U20/A (SAEDRVT14_BUF_6)                       0.06      0.00       0.58 r
+  routers_2_3_out_q_4/U20/X (SAEDRVT14_BUF_6)                       0.16      0.15       0.73 r
+  routers_2_3_out_q_4/n337 (net)               16         0.18                0.00       0.73 r
+  routers_2_3_out_q_4/U10/A (SAEDRVT14_BUF_6)                       0.16      0.01       0.74 r
+  routers_2_3_out_q_4/U10/X (SAEDRVT14_BUF_6)                       0.12      0.14       0.88 r
+  routers_2_3_out_q_4/n287 (net)               14         0.14                0.00       0.88 r
+  routers_2_3_out_q_4/U100/B1 (SAEDRVT14_AO222_1)                   0.12      0.01       0.89 r
+  routers_2_3_out_q_4/U100/X (SAEDRVT14_AO222_1)                    0.03      0.08       0.97 r
+  routers_2_3_out_q_4/N267 (net)                1         0.00                0.00       0.97 r
+  routers_2_3_out_q_4/data0_reg_reg_19_/D (SAEDRVT14_FDP_V2_1)      0.03      0.00       0.97 r
+  data arrival time                                                                      0.97
+
+  clock CLK (rise edge)                                                       1.00       1.00
+  clock network delay (ideal)                                                 0.00       1.00
+  routers_2_3_out_q_4/data0_reg_reg_19_/CK (SAEDRVT14_FDP_V2_1)               0.00       1.00 r
+  library setup time                                                         -0.03       0.97
+  data required time                                                                     0.97
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.97
+  data arrival time                                                                     -0.97
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+  Startpoint: EN_node_2_3_mav_get_packet
+              (input port clocked by CLK)
+  Endpoint: routers_2_3_out_q_4/data0_reg_reg_18_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: i2f
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkNoc              140000                saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  input external delay                                                        0.40       0.40 r
+  EN_node_2_3_mav_get_packet (in)                                   0.00      0.00       0.40 r
+  EN_node_2_3_mav_get_packet (net)              3         0.01                0.00       0.40 r
+  routers_2_3_out_q_4/DEQ (FIFO2_0000010c_0_40)                               0.00       0.40 r
+  routers_2_3_out_q_4/DEQ (net)                           0.01                0.00       0.40 r
+  routers_2_3_out_q_4/U29/A (SAEDRVT14_INV_S_2)                     0.00      0.00       0.40 r
+  routers_2_3_out_q_4/U29/X (SAEDRVT14_INV_S_2)                     0.05      0.03       0.43 f
+  routers_2_3_out_q_4/n389 (net)                4         0.02                0.00       0.43 f
+  routers_2_3_out_q_4/U28/A2 (SAEDRVT14_NR2_MM_6)                   0.05      0.00       0.44 f
+  routers_2_3_out_q_4/U28/X (SAEDRVT14_NR2_MM_6)                    0.11      0.06       0.50 r
+  routers_2_3_out_q_4/n342 (net)                6         0.03                0.00       0.50 r
+  routers_2_3_out_q_4/U65/A (SAEDRVT14_BUF_4)                       0.11      0.00       0.50 r
+  routers_2_3_out_q_4/U65/X (SAEDRVT14_BUF_4)                       0.06      0.08       0.58 r
+  routers_2_3_out_q_4/n325 (net)                7         0.04                0.00       0.58 r
+  routers_2_3_out_q_4/U20/A (SAEDRVT14_BUF_6)                       0.06      0.00       0.58 r
+  routers_2_3_out_q_4/U20/X (SAEDRVT14_BUF_6)                       0.16      0.15       0.73 r
+  routers_2_3_out_q_4/n337 (net)               16         0.18                0.00       0.73 r
+  routers_2_3_out_q_4/U10/A (SAEDRVT14_BUF_6)                       0.16      0.01       0.74 r
+  routers_2_3_out_q_4/U10/X (SAEDRVT14_BUF_6)                       0.12      0.14       0.88 r
+  routers_2_3_out_q_4/n287 (net)               14         0.14                0.00       0.88 r
+  routers_2_3_out_q_4/U53/B1 (SAEDRVT14_AO222_1)                    0.12      0.01       0.89 r
+  routers_2_3_out_q_4/U53/X (SAEDRVT14_AO222_1)                     0.03      0.08       0.97 r
+  routers_2_3_out_q_4/N268 (net)                1         0.00                0.00       0.97 r
+  routers_2_3_out_q_4/data0_reg_reg_18_/D (SAEDRVT14_FDP_V2_1)      0.03      0.00       0.97 r
+  data arrival time                                                                      0.97
+
+  clock CLK (rise edge)                                                       1.00       1.00
+  clock network delay (ideal)                                                 0.00       1.00
+  routers_2_3_out_q_4/data0_reg_reg_18_/CK (SAEDRVT14_FDP_V2_1)               0.00       1.00 r
+  library setup time                                                         -0.03       0.97
+  data required time                                                                     0.97
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.97
+  data arrival time                                                                     -0.97
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+  Startpoint: EN_node_2_3_mav_get_packet
+              (input port clocked by CLK)
+  Endpoint: routers_2_3_out_q_4/data0_reg_reg_17_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: i2f
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkNoc              140000                saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  input external delay                                                        0.40       0.40 r
+  EN_node_2_3_mav_get_packet (in)                                   0.00      0.00       0.40 r
+  EN_node_2_3_mav_get_packet (net)              3         0.01                0.00       0.40 r
+  routers_2_3_out_q_4/DEQ (FIFO2_0000010c_0_40)                               0.00       0.40 r
+  routers_2_3_out_q_4/DEQ (net)                           0.01                0.00       0.40 r
+  routers_2_3_out_q_4/U29/A (SAEDRVT14_INV_S_2)                     0.00      0.00       0.40 r
+  routers_2_3_out_q_4/U29/X (SAEDRVT14_INV_S_2)                     0.05      0.03       0.43 f
+  routers_2_3_out_q_4/n389 (net)                4         0.02                0.00       0.43 f
+  routers_2_3_out_q_4/U28/A2 (SAEDRVT14_NR2_MM_6)                   0.05      0.00       0.44 f
+  routers_2_3_out_q_4/U28/X (SAEDRVT14_NR2_MM_6)                    0.11      0.06       0.50 r
+  routers_2_3_out_q_4/n342 (net)                6         0.03                0.00       0.50 r
+  routers_2_3_out_q_4/U65/A (SAEDRVT14_BUF_4)                       0.11      0.00       0.50 r
+  routers_2_3_out_q_4/U65/X (SAEDRVT14_BUF_4)                       0.06      0.08       0.58 r
+  routers_2_3_out_q_4/n325 (net)                7         0.04                0.00       0.58 r
+  routers_2_3_out_q_4/U20/A (SAEDRVT14_BUF_6)                       0.06      0.00       0.58 r
+  routers_2_3_out_q_4/U20/X (SAEDRVT14_BUF_6)                       0.16      0.15       0.73 r
+  routers_2_3_out_q_4/n337 (net)               16         0.18                0.00       0.73 r
+  routers_2_3_out_q_4/U10/A (SAEDRVT14_BUF_6)                       0.16      0.01       0.74 r
+  routers_2_3_out_q_4/U10/X (SAEDRVT14_BUF_6)                       0.12      0.14       0.88 r
+  routers_2_3_out_q_4/n287 (net)               14         0.14                0.00       0.88 r
+  routers_2_3_out_q_4/U104/B1 (SAEDRVT14_AO222_1)                   0.12      0.01       0.89 r
+  routers_2_3_out_q_4/U104/X (SAEDRVT14_AO222_1)                    0.03      0.08       0.97 r
+  routers_2_3_out_q_4/N269 (net)                1         0.00                0.00       0.97 r
+  routers_2_3_out_q_4/data0_reg_reg_17_/D (SAEDRVT14_FDP_V2_1)      0.03      0.00       0.97 r
+  data arrival time                                                                      0.97
+
+  clock CLK (rise edge)                                                       1.00       1.00
+  clock network delay (ideal)                                                 0.00       1.00
+  routers_2_3_out_q_4/data0_reg_reg_17_/CK (SAEDRVT14_FDP_V2_1)               0.00       1.00 r
+  library setup time                                                         -0.03       0.97
+  data required time                                                                     0.97
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.97
+  data arrival time                                                                     -0.97
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+  Startpoint: EN_node_2_3_mav_get_packet
+              (input port clocked by CLK)
+  Endpoint: routers_2_3_out_q_4/data0_reg_reg_16_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: i2f
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkNoc              140000                saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  input external delay                                                        0.40       0.40 r
+  EN_node_2_3_mav_get_packet (in)                                   0.00      0.00       0.40 r
+  EN_node_2_3_mav_get_packet (net)              3         0.01                0.00       0.40 r
+  routers_2_3_out_q_4/DEQ (FIFO2_0000010c_0_40)                               0.00       0.40 r
+  routers_2_3_out_q_4/DEQ (net)                           0.01                0.00       0.40 r
+  routers_2_3_out_q_4/U29/A (SAEDRVT14_INV_S_2)                     0.00      0.00       0.40 r
+  routers_2_3_out_q_4/U29/X (SAEDRVT14_INV_S_2)                     0.05      0.03       0.43 f
+  routers_2_3_out_q_4/n389 (net)                4         0.02                0.00       0.43 f
+  routers_2_3_out_q_4/U28/A2 (SAEDRVT14_NR2_MM_6)                   0.05      0.00       0.44 f
+  routers_2_3_out_q_4/U28/X (SAEDRVT14_NR2_MM_6)                    0.11      0.06       0.50 r
+  routers_2_3_out_q_4/n342 (net)                6         0.03                0.00       0.50 r
+  routers_2_3_out_q_4/U65/A (SAEDRVT14_BUF_4)                       0.11      0.00       0.50 r
+  routers_2_3_out_q_4/U65/X (SAEDRVT14_BUF_4)                       0.06      0.08       0.58 r
+  routers_2_3_out_q_4/n325 (net)                7         0.04                0.00       0.58 r
+  routers_2_3_out_q_4/U20/A (SAEDRVT14_BUF_6)                       0.06      0.00       0.58 r
+  routers_2_3_out_q_4/U20/X (SAEDRVT14_BUF_6)                       0.16      0.15       0.73 r
+  routers_2_3_out_q_4/n337 (net)               16         0.18                0.00       0.73 r
+  routers_2_3_out_q_4/U10/A (SAEDRVT14_BUF_6)                       0.16      0.01       0.74 r
+  routers_2_3_out_q_4/U10/X (SAEDRVT14_BUF_6)                       0.12      0.14       0.88 r
+  routers_2_3_out_q_4/n287 (net)               14         0.14                0.00       0.88 r
+  routers_2_3_out_q_4/U138/B1 (SAEDRVT14_AO222_1)                   0.12      0.01       0.89 r
+  routers_2_3_out_q_4/U138/X (SAEDRVT14_AO222_1)                    0.03      0.08       0.97 r
+  routers_2_3_out_q_4/N270 (net)                1         0.00                0.00       0.97 r
+  routers_2_3_out_q_4/data0_reg_reg_16_/D (SAEDRVT14_FDP_V2_1)      0.03      0.00       0.97 r
+  data arrival time                                                                      0.97
+
+  clock CLK (rise edge)                                                       1.00       1.00
+  clock network delay (ideal)                                                 0.00       1.00
+  routers_2_3_out_q_4/data0_reg_reg_16_/CK (SAEDRVT14_FDP_V2_1)               0.00       1.00 r
+  library setup time                                                         -0.03       0.97
+  data required time                                                                     0.97
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.97
+  data arrival time                                                                     -0.97
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+  Startpoint: EN_node_2_3_mav_get_packet
+              (input port clocked by CLK)
+  Endpoint: routers_2_3_out_q_4/data0_reg_reg_15_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: i2f
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkNoc              140000                saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  input external delay                                                        0.40       0.40 r
+  EN_node_2_3_mav_get_packet (in)                                   0.00      0.00       0.40 r
+  EN_node_2_3_mav_get_packet (net)              3         0.01                0.00       0.40 r
+  routers_2_3_out_q_4/DEQ (FIFO2_0000010c_0_40)                               0.00       0.40 r
+  routers_2_3_out_q_4/DEQ (net)                           0.01                0.00       0.40 r
+  routers_2_3_out_q_4/U29/A (SAEDRVT14_INV_S_2)                     0.00      0.00       0.40 r
+  routers_2_3_out_q_4/U29/X (SAEDRVT14_INV_S_2)                     0.05      0.03       0.43 f
+  routers_2_3_out_q_4/n389 (net)                4         0.02                0.00       0.43 f
+  routers_2_3_out_q_4/U28/A2 (SAEDRVT14_NR2_MM_6)                   0.05      0.00       0.44 f
+  routers_2_3_out_q_4/U28/X (SAEDRVT14_NR2_MM_6)                    0.11      0.06       0.50 r
+  routers_2_3_out_q_4/n342 (net)                6         0.03                0.00       0.50 r
+  routers_2_3_out_q_4/U65/A (SAEDRVT14_BUF_4)                       0.11      0.00       0.50 r
+  routers_2_3_out_q_4/U65/X (SAEDRVT14_BUF_4)                       0.06      0.08       0.58 r
+  routers_2_3_out_q_4/n325 (net)                7         0.04                0.00       0.58 r
+  routers_2_3_out_q_4/U20/A (SAEDRVT14_BUF_6)                       0.06      0.00       0.58 r
+  routers_2_3_out_q_4/U20/X (SAEDRVT14_BUF_6)                       0.16      0.15       0.73 r
+  routers_2_3_out_q_4/n337 (net)               16         0.18                0.00       0.73 r
+  routers_2_3_out_q_4/U10/A (SAEDRVT14_BUF_6)                       0.16      0.01       0.74 r
+  routers_2_3_out_q_4/U10/X (SAEDRVT14_BUF_6)                       0.12      0.14       0.88 r
+  routers_2_3_out_q_4/n287 (net)               14         0.14                0.00       0.88 r
+  routers_2_3_out_q_4/U105/B1 (SAEDRVT14_AO222_1)                   0.12      0.01       0.89 r
+  routers_2_3_out_q_4/U105/X (SAEDRVT14_AO222_1)                    0.03      0.08       0.97 r
+  routers_2_3_out_q_4/N271 (net)                1         0.00                0.00       0.97 r
+  routers_2_3_out_q_4/data0_reg_reg_15_/D (SAEDRVT14_FDP_V2_1)      0.03      0.00       0.97 r
+  data arrival time                                                                      0.97
+
+  clock CLK (rise edge)                                                       1.00       1.00
+  clock network delay (ideal)                                                 0.00       1.00
+  routers_2_3_out_q_4/data0_reg_reg_15_/CK (SAEDRVT14_FDP_V2_1)               0.00       1.00 r
+  library setup time                                                         -0.03       0.97
+  data required time                                                                     0.97
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.97
+  data arrival time                                                                     -0.97
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+  Startpoint: EN_node_2_3_mav_get_packet
+              (input port clocked by CLK)
+  Endpoint: routers_2_3_out_q_4/data0_reg_reg_14_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: i2f
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkNoc              140000                saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  input external delay                                                        0.40       0.40 r
+  EN_node_2_3_mav_get_packet (in)                                   0.00      0.00       0.40 r
+  EN_node_2_3_mav_get_packet (net)              3         0.01                0.00       0.40 r
+  routers_2_3_out_q_4/DEQ (FIFO2_0000010c_0_40)                               0.00       0.40 r
+  routers_2_3_out_q_4/DEQ (net)                           0.01                0.00       0.40 r
+  routers_2_3_out_q_4/U29/A (SAEDRVT14_INV_S_2)                     0.00      0.00       0.40 r
+  routers_2_3_out_q_4/U29/X (SAEDRVT14_INV_S_2)                     0.05      0.03       0.43 f
+  routers_2_3_out_q_4/n389 (net)                4         0.02                0.00       0.43 f
+  routers_2_3_out_q_4/U28/A2 (SAEDRVT14_NR2_MM_6)                   0.05      0.00       0.44 f
+  routers_2_3_out_q_4/U28/X (SAEDRVT14_NR2_MM_6)                    0.11      0.06       0.50 r
+  routers_2_3_out_q_4/n342 (net)                6         0.03                0.00       0.50 r
+  routers_2_3_out_q_4/U65/A (SAEDRVT14_BUF_4)                       0.11      0.00       0.50 r
+  routers_2_3_out_q_4/U65/X (SAEDRVT14_BUF_4)                       0.06      0.08       0.58 r
+  routers_2_3_out_q_4/n325 (net)                7         0.04                0.00       0.58 r
+  routers_2_3_out_q_4/U20/A (SAEDRVT14_BUF_6)                       0.06      0.00       0.58 r
+  routers_2_3_out_q_4/U20/X (SAEDRVT14_BUF_6)                       0.16      0.15       0.73 r
+  routers_2_3_out_q_4/n337 (net)               16         0.18                0.00       0.73 r
+  routers_2_3_out_q_4/U10/A (SAEDRVT14_BUF_6)                       0.16      0.01       0.74 r
+  routers_2_3_out_q_4/U10/X (SAEDRVT14_BUF_6)                       0.12      0.14       0.88 r
+  routers_2_3_out_q_4/n287 (net)               14         0.14                0.00       0.88 r
+  routers_2_3_out_q_4/U52/B1 (SAEDRVT14_AO222_1)                    0.12      0.01       0.89 r
+  routers_2_3_out_q_4/U52/X (SAEDRVT14_AO222_1)                     0.03      0.08       0.97 r
+  routers_2_3_out_q_4/N272 (net)                1         0.00                0.00       0.97 r
+  routers_2_3_out_q_4/data0_reg_reg_14_/D (SAEDRVT14_FDP_V2_1)      0.03      0.00       0.97 r
+  data arrival time                                                                      0.97
+
+  clock CLK (rise edge)                                                       1.00       1.00
+  clock network delay (ideal)                                                 0.00       1.00
+  routers_2_3_out_q_4/data0_reg_reg_14_/CK (SAEDRVT14_FDP_V2_1)               0.00       1.00 r
+  library setup time                                                         -0.03       0.97
+  data required time                                                                     0.97
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.97
+  data arrival time                                                                     -0.97
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+  Startpoint: EN_node_2_3_mav_get_packet
+              (input port clocked by CLK)
+  Endpoint: routers_2_3_out_q_4/data0_reg_reg_13_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: i2f
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkNoc              140000                saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  input external delay                                                        0.40       0.40 r
+  EN_node_2_3_mav_get_packet (in)                                   0.00      0.00       0.40 r
+  EN_node_2_3_mav_get_packet (net)              3         0.01                0.00       0.40 r
+  routers_2_3_out_q_4/DEQ (FIFO2_0000010c_0_40)                               0.00       0.40 r
+  routers_2_3_out_q_4/DEQ (net)                           0.01                0.00       0.40 r
+  routers_2_3_out_q_4/U29/A (SAEDRVT14_INV_S_2)                     0.00      0.00       0.40 r
+  routers_2_3_out_q_4/U29/X (SAEDRVT14_INV_S_2)                     0.05      0.03       0.43 f
+  routers_2_3_out_q_4/n389 (net)                4         0.02                0.00       0.43 f
+  routers_2_3_out_q_4/U28/A2 (SAEDRVT14_NR2_MM_6)                   0.05      0.00       0.44 f
+  routers_2_3_out_q_4/U28/X (SAEDRVT14_NR2_MM_6)                    0.11      0.06       0.50 r
+  routers_2_3_out_q_4/n342 (net)                6         0.03                0.00       0.50 r
+  routers_2_3_out_q_4/U65/A (SAEDRVT14_BUF_4)                       0.11      0.00       0.50 r
+  routers_2_3_out_q_4/U65/X (SAEDRVT14_BUF_4)                       0.06      0.08       0.58 r
+  routers_2_3_out_q_4/n325 (net)                7         0.04                0.00       0.58 r
+  routers_2_3_out_q_4/U20/A (SAEDRVT14_BUF_6)                       0.06      0.00       0.58 r
+  routers_2_3_out_q_4/U20/X (SAEDRVT14_BUF_6)                       0.16      0.15       0.73 r
+  routers_2_3_out_q_4/n337 (net)               16         0.18                0.00       0.73 r
+  routers_2_3_out_q_4/U10/A (SAEDRVT14_BUF_6)                       0.16      0.01       0.74 r
+  routers_2_3_out_q_4/U10/X (SAEDRVT14_BUF_6)                       0.12      0.14       0.88 r
+  routers_2_3_out_q_4/n287 (net)               14         0.14                0.00       0.88 r
+  routers_2_3_out_q_4/U103/B1 (SAEDRVT14_AO222_1)                   0.12      0.01       0.89 r
+  routers_2_3_out_q_4/U103/X (SAEDRVT14_AO222_1)                    0.03      0.08       0.97 r
+  routers_2_3_out_q_4/N273 (net)                1         0.00                0.00       0.97 r
+  routers_2_3_out_q_4/data0_reg_reg_13_/D (SAEDRVT14_FDP_V2_1)      0.03      0.00       0.97 r
+  data arrival time                                                                      0.97
+
+  clock CLK (rise edge)                                                       1.00       1.00
+  clock network delay (ideal)                                                 0.00       1.00
+  routers_2_3_out_q_4/data0_reg_reg_13_/CK (SAEDRVT14_FDP_V2_1)               0.00       1.00 r
+  library setup time                                                         -0.03       0.97
+  data required time                                                                     0.97
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.97
+  data arrival time                                                                     -0.97
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+  Startpoint: EN_node_2_3_mav_get_packet
+              (input port clocked by CLK)
+  Endpoint: routers_2_3_out_q_4/data0_reg_reg_12_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: i2f
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkNoc              140000                saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  input external delay                                                        0.40       0.40 r
+  EN_node_2_3_mav_get_packet (in)                                   0.00      0.00       0.40 r
+  EN_node_2_3_mav_get_packet (net)              3         0.01                0.00       0.40 r
+  routers_2_3_out_q_4/DEQ (FIFO2_0000010c_0_40)                               0.00       0.40 r
+  routers_2_3_out_q_4/DEQ (net)                           0.01                0.00       0.40 r
+  routers_2_3_out_q_4/U29/A (SAEDRVT14_INV_S_2)                     0.00      0.00       0.40 r
+  routers_2_3_out_q_4/U29/X (SAEDRVT14_INV_S_2)                     0.05      0.03       0.43 f
+  routers_2_3_out_q_4/n389 (net)                4         0.02                0.00       0.43 f
+  routers_2_3_out_q_4/U28/A2 (SAEDRVT14_NR2_MM_6)                   0.05      0.00       0.44 f
+  routers_2_3_out_q_4/U28/X (SAEDRVT14_NR2_MM_6)                    0.11      0.06       0.50 r
+  routers_2_3_out_q_4/n342 (net)                6         0.03                0.00       0.50 r
+  routers_2_3_out_q_4/U65/A (SAEDRVT14_BUF_4)                       0.11      0.00       0.50 r
+  routers_2_3_out_q_4/U65/X (SAEDRVT14_BUF_4)                       0.06      0.08       0.58 r
+  routers_2_3_out_q_4/n325 (net)                7         0.04                0.00       0.58 r
+  routers_2_3_out_q_4/U20/A (SAEDRVT14_BUF_6)                       0.06      0.00       0.58 r
+  routers_2_3_out_q_4/U20/X (SAEDRVT14_BUF_6)                       0.16      0.15       0.73 r
+  routers_2_3_out_q_4/n337 (net)               16         0.18                0.00       0.73 r
+  routers_2_3_out_q_4/U10/A (SAEDRVT14_BUF_6)                       0.16      0.01       0.74 r
+  routers_2_3_out_q_4/U10/X (SAEDRVT14_BUF_6)                       0.12      0.14       0.88 r
+  routers_2_3_out_q_4/n287 (net)               14         0.14                0.00       0.88 r
+  routers_2_3_out_q_4/U51/B1 (SAEDRVT14_AO222_1)                    0.12      0.01       0.89 r
+  routers_2_3_out_q_4/U51/X (SAEDRVT14_AO222_1)                     0.03      0.08       0.97 r
+  routers_2_3_out_q_4/N274 (net)                1         0.00                0.00       0.97 r
+  routers_2_3_out_q_4/data0_reg_reg_12_/D (SAEDRVT14_FDP_V2_1)      0.03      0.00       0.97 r
+  data arrival time                                                                      0.97
+
+  clock CLK (rise edge)                                                       1.00       1.00
+  clock network delay (ideal)                                                 0.00       1.00
+  routers_2_3_out_q_4/data0_reg_reg_12_/CK (SAEDRVT14_FDP_V2_1)               0.00       1.00 r
+  library setup time                                                         -0.03       0.97
+  data required time                                                                     0.97
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.97
+  data arrival time                                                                     -0.97
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+  Startpoint: EN_node_2_3_mav_get_packet
+              (input port clocked by CLK)
+  Endpoint: routers_2_3_out_q_4/data0_reg_reg_11_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: i2f
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkNoc              140000                saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  input external delay                                                        0.40       0.40 r
+  EN_node_2_3_mav_get_packet (in)                                   0.00      0.00       0.40 r
+  EN_node_2_3_mav_get_packet (net)              3         0.01                0.00       0.40 r
+  routers_2_3_out_q_4/DEQ (FIFO2_0000010c_0_40)                               0.00       0.40 r
+  routers_2_3_out_q_4/DEQ (net)                           0.01                0.00       0.40 r
+  routers_2_3_out_q_4/U29/A (SAEDRVT14_INV_S_2)                     0.00      0.00       0.40 r
+  routers_2_3_out_q_4/U29/X (SAEDRVT14_INV_S_2)                     0.05      0.03       0.43 f
+  routers_2_3_out_q_4/n389 (net)                4         0.02                0.00       0.43 f
+  routers_2_3_out_q_4/U28/A2 (SAEDRVT14_NR2_MM_6)                   0.05      0.00       0.44 f
+  routers_2_3_out_q_4/U28/X (SAEDRVT14_NR2_MM_6)                    0.11      0.06       0.50 r
+  routers_2_3_out_q_4/n342 (net)                6         0.03                0.00       0.50 r
+  routers_2_3_out_q_4/U65/A (SAEDRVT14_BUF_4)                       0.11      0.00       0.50 r
+  routers_2_3_out_q_4/U65/X (SAEDRVT14_BUF_4)                       0.06      0.08       0.58 r
+  routers_2_3_out_q_4/n325 (net)                7         0.04                0.00       0.58 r
+  routers_2_3_out_q_4/U20/A (SAEDRVT14_BUF_6)                       0.06      0.00       0.58 r
+  routers_2_3_out_q_4/U20/X (SAEDRVT14_BUF_6)                       0.16      0.15       0.73 r
+  routers_2_3_out_q_4/n337 (net)               16         0.18                0.00       0.73 r
+  routers_2_3_out_q_4/U10/A (SAEDRVT14_BUF_6)                       0.16      0.01       0.74 r
+  routers_2_3_out_q_4/U10/X (SAEDRVT14_BUF_6)                       0.12      0.14       0.88 r
+  routers_2_3_out_q_4/n287 (net)               14         0.14                0.00       0.88 r
+  routers_2_3_out_q_4/U101/B1 (SAEDRVT14_AO222_1)                   0.12      0.01       0.89 r
+  routers_2_3_out_q_4/U101/X (SAEDRVT14_AO222_1)                    0.03      0.08       0.97 r
+  routers_2_3_out_q_4/N275 (net)                1         0.00                0.00       0.97 r
+  routers_2_3_out_q_4/data0_reg_reg_11_/D (SAEDRVT14_FDP_V2_1)      0.03      0.00       0.97 r
+  data arrival time                                                                      0.97
+
+  clock CLK (rise edge)                                                       1.00       1.00
+  clock network delay (ideal)                                                 0.00       1.00
+  routers_2_3_out_q_4/data0_reg_reg_11_/CK (SAEDRVT14_FDP_V2_1)               0.00       1.00 r
+  library setup time                                                         -0.03       0.97
+  data required time                                                                     0.97
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.97
+  data arrival time                                                                     -0.97
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+  Startpoint: EN_node_2_3_mav_get_packet
+              (input port clocked by CLK)
+  Endpoint: routers_2_3_out_q_4/data0_reg_reg_9_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: i2f
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkNoc              140000                saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  input external delay                                                        0.40       0.40 r
+  EN_node_2_3_mav_get_packet (in)                                   0.00      0.00       0.40 r
+  EN_node_2_3_mav_get_packet (net)              3         0.01                0.00       0.40 r
+  routers_2_3_out_q_4/DEQ (FIFO2_0000010c_0_40)                               0.00       0.40 r
+  routers_2_3_out_q_4/DEQ (net)                           0.01                0.00       0.40 r
+  routers_2_3_out_q_4/U29/A (SAEDRVT14_INV_S_2)                     0.00      0.00       0.40 r
+  routers_2_3_out_q_4/U29/X (SAEDRVT14_INV_S_2)                     0.05      0.03       0.43 f
+  routers_2_3_out_q_4/n389 (net)                4         0.02                0.00       0.43 f
+  routers_2_3_out_q_4/U28/A2 (SAEDRVT14_NR2_MM_6)                   0.05      0.00       0.44 f
+  routers_2_3_out_q_4/U28/X (SAEDRVT14_NR2_MM_6)                    0.11      0.06       0.50 r
+  routers_2_3_out_q_4/n342 (net)                6         0.03                0.00       0.50 r
+  routers_2_3_out_q_4/U65/A (SAEDRVT14_BUF_4)                       0.11      0.00       0.50 r
+  routers_2_3_out_q_4/U65/X (SAEDRVT14_BUF_4)                       0.06      0.08       0.58 r
+  routers_2_3_out_q_4/n325 (net)                7         0.04                0.00       0.58 r
+  routers_2_3_out_q_4/U20/A (SAEDRVT14_BUF_6)                       0.06      0.00       0.58 r
+  routers_2_3_out_q_4/U20/X (SAEDRVT14_BUF_6)                       0.16      0.15       0.73 r
+  routers_2_3_out_q_4/n337 (net)               16         0.18                0.00       0.73 r
+  routers_2_3_out_q_4/U10/A (SAEDRVT14_BUF_6)                       0.16      0.01       0.74 r
+  routers_2_3_out_q_4/U10/X (SAEDRVT14_BUF_6)                       0.12      0.14       0.88 r
+  routers_2_3_out_q_4/n287 (net)               14         0.14                0.00       0.88 r
+  routers_2_3_out_q_4/U102/B1 (SAEDRVT14_AO222_1)                   0.12      0.01       0.89 r
+  routers_2_3_out_q_4/U102/X (SAEDRVT14_AO222_1)                    0.03      0.08       0.97 r
+  routers_2_3_out_q_4/N277 (net)                1         0.00                0.00       0.97 r
+  routers_2_3_out_q_4/data0_reg_reg_9_/D (SAEDRVT14_FDP_V2_1)       0.03      0.00       0.97 r
+  data arrival time                                                                      0.97
+
+  clock CLK (rise edge)                                                       1.00       1.00
+  clock network delay (ideal)                                                 0.00       1.00
+  routers_2_3_out_q_4/data0_reg_reg_9_/CK (SAEDRVT14_FDP_V2_1)                0.00       1.00 r
+  library setup time                                                         -0.03       0.97
+  data required time                                                                     0.97
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.97
+  data arrival time                                                                     -0.97
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+  Startpoint: EN_node_1_0_mav_get_packet
+              (input port clocked by CLK)
+  Endpoint: routers_1_0_out_q_4/data0_reg_reg_155_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: i2f
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkNoc              140000                saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  input external delay                                                        0.40       0.40 r
+  EN_node_1_0_mav_get_packet (in)                                   0.00      0.00       0.40 r
+  EN_node_1_0_mav_get_packet (net)              3         0.02                0.00       0.40 r
+  routers_1_0_out_q_4/DEQ (FIFO2_0000010c_0_110)                              0.00       0.40 r
+  routers_1_0_out_q_4/DEQ (net)                           0.02                0.00       0.40 r
+  routers_1_0_out_q_4/U127/A (SAEDRVT14_INV_4)                      0.00      0.00       0.40 r
+  routers_1_0_out_q_4/U127/X (SAEDRVT14_INV_4)                      0.02      0.02       0.42 f
+  routers_1_0_out_q_4/n390 (net)                4         0.02                0.00       0.42 f
+  routers_1_0_out_q_4/U65/A2 (SAEDRVT14_NR2_MM_4)                   0.02      0.00       0.42 f
+  routers_1_0_out_q_4/U65/X (SAEDRVT14_NR2_MM_4)                    0.07      0.05       0.46 r
+  routers_1_0_out_q_4/n328 (net)                4         0.02                0.00       0.46 r
+  routers_1_0_out_q_4/U126/A (SAEDRVT14_BUF_4)                      0.07      0.00       0.47 r
+  routers_1_0_out_q_4/U126/X (SAEDRVT14_BUF_4)                      0.04      0.06       0.52 r
+  routers_1_0_out_q_4/n331 (net)                5         0.03                0.00       0.52 r
+  routers_1_0_out_q_4/U13/A (SAEDRVT14_BUF_S_2)                     0.04      0.00       0.53 r
+  routers_1_0_out_q_4/U13/X (SAEDRVT14_BUF_S_2)                     0.18      0.15       0.68 r
+  routers_1_0_out_q_4/n307 (net)               10         0.07                0.00       0.68 r
+  routers_1_0_out_q_4/U8/A (SAEDRVT14_BUF_4)                        0.18      0.00       0.68 r
+  routers_1_0_out_q_4/U8/X (SAEDRVT14_BUF_4)                        0.18      0.18       0.86 r
+  routers_1_0_out_q_4/n314 (net)               14         0.14                0.00       0.86 r
+  routers_1_0_out_q_4/U227/B1 (SAEDRVT14_AO222_1)                   0.18      0.01       0.87 r
+  routers_1_0_out_q_4/U227/X (SAEDRVT14_AO222_1)                    0.03      0.10       0.97 r
+  routers_1_0_out_q_4/N131 (net)                1         0.00                0.00       0.97 r
+  routers_1_0_out_q_4/data0_reg_reg_155_/D (SAEDRVT14_FDP_V2_1)     0.03      0.00       0.97 r
+  data arrival time                                                                      0.97
+
+  clock CLK (rise edge)                                                       1.00       1.00
+  clock network delay (ideal)                                                 0.00       1.00
+  routers_1_0_out_q_4/data0_reg_reg_155_/CK (SAEDRVT14_FDP_V2_1)              0.00       1.00 r
+  library setup time                                                         -0.03       0.97
+  data required time                                                                     0.97
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.97
+  data arrival time                                                                     -0.97
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+  Startpoint: EN_node_1_0_mav_get_packet
+              (input port clocked by CLK)
+  Endpoint: routers_1_0_out_q_4/data0_reg_reg_154_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: i2f
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkNoc              140000                saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  input external delay                                                        0.40       0.40 r
+  EN_node_1_0_mav_get_packet (in)                                   0.00      0.00       0.40 r
+  EN_node_1_0_mav_get_packet (net)              3         0.02                0.00       0.40 r
+  routers_1_0_out_q_4/DEQ (FIFO2_0000010c_0_110)                              0.00       0.40 r
+  routers_1_0_out_q_4/DEQ (net)                           0.02                0.00       0.40 r
+  routers_1_0_out_q_4/U127/A (SAEDRVT14_INV_4)                      0.00      0.00       0.40 r
+  routers_1_0_out_q_4/U127/X (SAEDRVT14_INV_4)                      0.02      0.02       0.42 f
+  routers_1_0_out_q_4/n390 (net)                4         0.02                0.00       0.42 f
+  routers_1_0_out_q_4/U65/A2 (SAEDRVT14_NR2_MM_4)                   0.02      0.00       0.42 f
+  routers_1_0_out_q_4/U65/X (SAEDRVT14_NR2_MM_4)                    0.07      0.05       0.46 r
+  routers_1_0_out_q_4/n328 (net)                4         0.02                0.00       0.46 r
+  routers_1_0_out_q_4/U126/A (SAEDRVT14_BUF_4)                      0.07      0.00       0.47 r
+  routers_1_0_out_q_4/U126/X (SAEDRVT14_BUF_4)                      0.04      0.06       0.52 r
+  routers_1_0_out_q_4/n331 (net)                5         0.03                0.00       0.52 r
+  routers_1_0_out_q_4/U13/A (SAEDRVT14_BUF_S_2)                     0.04      0.00       0.53 r
+  routers_1_0_out_q_4/U13/X (SAEDRVT14_BUF_S_2)                     0.18      0.15       0.68 r
+  routers_1_0_out_q_4/n307 (net)               10         0.07                0.00       0.68 r
+  routers_1_0_out_q_4/U8/A (SAEDRVT14_BUF_4)                        0.18      0.00       0.68 r
+  routers_1_0_out_q_4/U8/X (SAEDRVT14_BUF_4)                        0.18      0.18       0.86 r
+  routers_1_0_out_q_4/n314 (net)               14         0.14                0.00       0.86 r
+  routers_1_0_out_q_4/U271/B1 (SAEDRVT14_AO222_1)                   0.18      0.01       0.87 r
+  routers_1_0_out_q_4/U271/X (SAEDRVT14_AO222_1)                    0.03      0.10       0.97 r
+  routers_1_0_out_q_4/N132 (net)                1         0.00                0.00       0.97 r
+  routers_1_0_out_q_4/data0_reg_reg_154_/D (SAEDRVT14_FDP_V2_1)     0.03      0.00       0.97 r
+  data arrival time                                                                      0.97
+
+  clock CLK (rise edge)                                                       1.00       1.00
+  clock network delay (ideal)                                                 0.00       1.00
+  routers_1_0_out_q_4/data0_reg_reg_154_/CK (SAEDRVT14_FDP_V2_1)              0.00       1.00 r
+  library setup time                                                         -0.03       0.97
+  data required time                                                                     0.97
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.97
+  data arrival time                                                                     -0.97
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+  Startpoint: EN_node_1_0_mav_get_packet
+              (input port clocked by CLK)
+  Endpoint: routers_1_0_out_q_4/data0_reg_reg_153_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: i2f
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkNoc              140000                saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  input external delay                                                        0.40       0.40 r
+  EN_node_1_0_mav_get_packet (in)                                   0.00      0.00       0.40 r
+  EN_node_1_0_mav_get_packet (net)              3         0.02                0.00       0.40 r
+  routers_1_0_out_q_4/DEQ (FIFO2_0000010c_0_110)                              0.00       0.40 r
+  routers_1_0_out_q_4/DEQ (net)                           0.02                0.00       0.40 r
+  routers_1_0_out_q_4/U127/A (SAEDRVT14_INV_4)                      0.00      0.00       0.40 r
+  routers_1_0_out_q_4/U127/X (SAEDRVT14_INV_4)                      0.02      0.02       0.42 f
+  routers_1_0_out_q_4/n390 (net)                4         0.02                0.00       0.42 f
+  routers_1_0_out_q_4/U65/A2 (SAEDRVT14_NR2_MM_4)                   0.02      0.00       0.42 f
+  routers_1_0_out_q_4/U65/X (SAEDRVT14_NR2_MM_4)                    0.07      0.05       0.46 r
+  routers_1_0_out_q_4/n328 (net)                4         0.02                0.00       0.46 r
+  routers_1_0_out_q_4/U126/A (SAEDRVT14_BUF_4)                      0.07      0.00       0.47 r
+  routers_1_0_out_q_4/U126/X (SAEDRVT14_BUF_4)                      0.04      0.06       0.52 r
+  routers_1_0_out_q_4/n331 (net)                5         0.03                0.00       0.52 r
+  routers_1_0_out_q_4/U13/A (SAEDRVT14_BUF_S_2)                     0.04      0.00       0.53 r
+  routers_1_0_out_q_4/U13/X (SAEDRVT14_BUF_S_2)                     0.18      0.15       0.68 r
+  routers_1_0_out_q_4/n307 (net)               10         0.07                0.00       0.68 r
+  routers_1_0_out_q_4/U8/A (SAEDRVT14_BUF_4)                        0.18      0.00       0.68 r
+  routers_1_0_out_q_4/U8/X (SAEDRVT14_BUF_4)                        0.18      0.18       0.86 r
+  routers_1_0_out_q_4/n314 (net)               14         0.14                0.00       0.86 r
+  routers_1_0_out_q_4/U222/B1 (SAEDRVT14_AO222_1)                   0.18      0.01       0.87 r
+  routers_1_0_out_q_4/U222/X (SAEDRVT14_AO222_1)                    0.03      0.10       0.97 r
+  routers_1_0_out_q_4/N133 (net)                1         0.00                0.00       0.97 r
+  routers_1_0_out_q_4/data0_reg_reg_153_/D (SAEDRVT14_FDP_V2_1)     0.03      0.00       0.97 r
+  data arrival time                                                                      0.97
+
+  clock CLK (rise edge)                                                       1.00       1.00
+  clock network delay (ideal)                                                 0.00       1.00
+  routers_1_0_out_q_4/data0_reg_reg_153_/CK (SAEDRVT14_FDP_V2_1)              0.00       1.00 r
+  library setup time                                                         -0.03       0.97
+  data required time                                                                     0.97
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.97
+  data arrival time                                                                     -0.97
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+  Startpoint: EN_node_1_0_mav_get_packet
+              (input port clocked by CLK)
+  Endpoint: routers_1_0_out_q_4/data0_reg_reg_152_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: i2f
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkNoc              140000                saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  input external delay                                                        0.40       0.40 r
+  EN_node_1_0_mav_get_packet (in)                                   0.00      0.00       0.40 r
+  EN_node_1_0_mav_get_packet (net)              3         0.02                0.00       0.40 r
+  routers_1_0_out_q_4/DEQ (FIFO2_0000010c_0_110)                              0.00       0.40 r
+  routers_1_0_out_q_4/DEQ (net)                           0.02                0.00       0.40 r
+  routers_1_0_out_q_4/U127/A (SAEDRVT14_INV_4)                      0.00      0.00       0.40 r
+  routers_1_0_out_q_4/U127/X (SAEDRVT14_INV_4)                      0.02      0.02       0.42 f
+  routers_1_0_out_q_4/n390 (net)                4         0.02                0.00       0.42 f
+  routers_1_0_out_q_4/U65/A2 (SAEDRVT14_NR2_MM_4)                   0.02      0.00       0.42 f
+  routers_1_0_out_q_4/U65/X (SAEDRVT14_NR2_MM_4)                    0.07      0.05       0.46 r
+  routers_1_0_out_q_4/n328 (net)                4         0.02                0.00       0.46 r
+  routers_1_0_out_q_4/U126/A (SAEDRVT14_BUF_4)                      0.07      0.00       0.47 r
+  routers_1_0_out_q_4/U126/X (SAEDRVT14_BUF_4)                      0.04      0.06       0.52 r
+  routers_1_0_out_q_4/n331 (net)                5         0.03                0.00       0.52 r
+  routers_1_0_out_q_4/U13/A (SAEDRVT14_BUF_S_2)                     0.04      0.00       0.53 r
+  routers_1_0_out_q_4/U13/X (SAEDRVT14_BUF_S_2)                     0.18      0.15       0.68 r
+  routers_1_0_out_q_4/n307 (net)               10         0.07                0.00       0.68 r
+  routers_1_0_out_q_4/U8/A (SAEDRVT14_BUF_4)                        0.18      0.00       0.68 r
+  routers_1_0_out_q_4/U8/X (SAEDRVT14_BUF_4)                        0.18      0.18       0.86 r
+  routers_1_0_out_q_4/n314 (net)               14         0.14                0.00       0.86 r
+  routers_1_0_out_q_4/U343/B1 (SAEDRVT14_AO222_1)                   0.18      0.01       0.87 r
+  routers_1_0_out_q_4/U343/X (SAEDRVT14_AO222_1)                    0.03      0.10       0.97 r
+  routers_1_0_out_q_4/N134 (net)                1         0.00                0.00       0.97 r
+  routers_1_0_out_q_4/data0_reg_reg_152_/D (SAEDRVT14_FDP_V2_1)     0.03      0.00       0.97 r
+  data arrival time                                                                      0.97
+
+  clock CLK (rise edge)                                                       1.00       1.00
+  clock network delay (ideal)                                                 0.00       1.00
+  routers_1_0_out_q_4/data0_reg_reg_152_/CK (SAEDRVT14_FDP_V2_1)              0.00       1.00 r
+  library setup time                                                         -0.03       0.97
+  data required time                                                                     0.97
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.97
+  data arrival time                                                                     -0.97
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+  Startpoint: EN_node_1_0_mav_get_packet
+              (input port clocked by CLK)
+  Endpoint: routers_1_0_out_q_4/data0_reg_reg_151_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: i2f
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkNoc              140000                saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  input external delay                                                        0.40       0.40 r
+  EN_node_1_0_mav_get_packet (in)                                   0.00      0.00       0.40 r
+  EN_node_1_0_mav_get_packet (net)              3         0.02                0.00       0.40 r
+  routers_1_0_out_q_4/DEQ (FIFO2_0000010c_0_110)                              0.00       0.40 r
+  routers_1_0_out_q_4/DEQ (net)                           0.02                0.00       0.40 r
+  routers_1_0_out_q_4/U127/A (SAEDRVT14_INV_4)                      0.00      0.00       0.40 r
+  routers_1_0_out_q_4/U127/X (SAEDRVT14_INV_4)                      0.02      0.02       0.42 f
+  routers_1_0_out_q_4/n390 (net)                4         0.02                0.00       0.42 f
+  routers_1_0_out_q_4/U65/A2 (SAEDRVT14_NR2_MM_4)                   0.02      0.00       0.42 f
+  routers_1_0_out_q_4/U65/X (SAEDRVT14_NR2_MM_4)                    0.07      0.05       0.46 r
+  routers_1_0_out_q_4/n328 (net)                4         0.02                0.00       0.46 r
+  routers_1_0_out_q_4/U126/A (SAEDRVT14_BUF_4)                      0.07      0.00       0.47 r
+  routers_1_0_out_q_4/U126/X (SAEDRVT14_BUF_4)                      0.04      0.06       0.52 r
+  routers_1_0_out_q_4/n331 (net)                5         0.03                0.00       0.52 r
+  routers_1_0_out_q_4/U13/A (SAEDRVT14_BUF_S_2)                     0.04      0.00       0.53 r
+  routers_1_0_out_q_4/U13/X (SAEDRVT14_BUF_S_2)                     0.18      0.15       0.68 r
+  routers_1_0_out_q_4/n307 (net)               10         0.07                0.00       0.68 r
+  routers_1_0_out_q_4/U8/A (SAEDRVT14_BUF_4)                        0.18      0.00       0.68 r
+  routers_1_0_out_q_4/U8/X (SAEDRVT14_BUF_4)                        0.18      0.18       0.86 r
+  routers_1_0_out_q_4/n314 (net)               14         0.14                0.00       0.86 r
+  routers_1_0_out_q_4/U235/B1 (SAEDRVT14_AO222_1)                   0.18      0.01       0.87 r
+  routers_1_0_out_q_4/U235/X (SAEDRVT14_AO222_1)                    0.03      0.10       0.97 r
+  routers_1_0_out_q_4/N135 (net)                1         0.00                0.00       0.97 r
+  routers_1_0_out_q_4/data0_reg_reg_151_/D (SAEDRVT14_FDP_V2_1)     0.03      0.00       0.97 r
+  data arrival time                                                                      0.97
+
+  clock CLK (rise edge)                                                       1.00       1.00
+  clock network delay (ideal)                                                 0.00       1.00
+  routers_1_0_out_q_4/data0_reg_reg_151_/CK (SAEDRVT14_FDP_V2_1)              0.00       1.00 r
+  library setup time                                                         -0.03       0.97
+  data required time                                                                     0.97
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.97
+  data arrival time                                                                     -0.97
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+  Startpoint: EN_node_1_0_mav_get_packet
+              (input port clocked by CLK)
+  Endpoint: routers_1_0_out_q_4/data0_reg_reg_150_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: i2f
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkNoc              140000                saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  input external delay                                                        0.40       0.40 r
+  EN_node_1_0_mav_get_packet (in)                                   0.00      0.00       0.40 r
+  EN_node_1_0_mav_get_packet (net)              3         0.02                0.00       0.40 r
+  routers_1_0_out_q_4/DEQ (FIFO2_0000010c_0_110)                              0.00       0.40 r
+  routers_1_0_out_q_4/DEQ (net)                           0.02                0.00       0.40 r
+  routers_1_0_out_q_4/U127/A (SAEDRVT14_INV_4)                      0.00      0.00       0.40 r
+  routers_1_0_out_q_4/U127/X (SAEDRVT14_INV_4)                      0.02      0.02       0.42 f
+  routers_1_0_out_q_4/n390 (net)                4         0.02                0.00       0.42 f
+  routers_1_0_out_q_4/U65/A2 (SAEDRVT14_NR2_MM_4)                   0.02      0.00       0.42 f
+  routers_1_0_out_q_4/U65/X (SAEDRVT14_NR2_MM_4)                    0.07      0.05       0.46 r
+  routers_1_0_out_q_4/n328 (net)                4         0.02                0.00       0.46 r
+  routers_1_0_out_q_4/U126/A (SAEDRVT14_BUF_4)                      0.07      0.00       0.47 r
+  routers_1_0_out_q_4/U126/X (SAEDRVT14_BUF_4)                      0.04      0.06       0.52 r
+  routers_1_0_out_q_4/n331 (net)                5         0.03                0.00       0.52 r
+  routers_1_0_out_q_4/U13/A (SAEDRVT14_BUF_S_2)                     0.04      0.00       0.53 r
+  routers_1_0_out_q_4/U13/X (SAEDRVT14_BUF_S_2)                     0.18      0.15       0.68 r
+  routers_1_0_out_q_4/n307 (net)               10         0.07                0.00       0.68 r
+  routers_1_0_out_q_4/U8/A (SAEDRVT14_BUF_4)                        0.18      0.00       0.68 r
+  routers_1_0_out_q_4/U8/X (SAEDRVT14_BUF_4)                        0.18      0.18       0.86 r
+  routers_1_0_out_q_4/n314 (net)               14         0.14                0.00       0.86 r
+  routers_1_0_out_q_4/U344/B1 (SAEDRVT14_AO222_1)                   0.18      0.01       0.87 r
+  routers_1_0_out_q_4/U344/X (SAEDRVT14_AO222_1)                    0.03      0.10       0.97 r
+  routers_1_0_out_q_4/N136 (net)                1         0.00                0.00       0.97 r
+  routers_1_0_out_q_4/data0_reg_reg_150_/D (SAEDRVT14_FDP_V2_1)     0.03      0.00       0.97 r
+  data arrival time                                                                      0.97
+
+  clock CLK (rise edge)                                                       1.00       1.00
+  clock network delay (ideal)                                                 0.00       1.00
+  routers_1_0_out_q_4/data0_reg_reg_150_/CK (SAEDRVT14_FDP_V2_1)              0.00       1.00 r
+  library setup time                                                         -0.03       0.97
+  data required time                                                                     0.97
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.97
+  data arrival time                                                                     -0.97
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+  Startpoint: EN_node_1_0_mav_get_packet
+              (input port clocked by CLK)
+  Endpoint: routers_1_0_out_q_4/data0_reg_reg_149_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: i2f
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkNoc              140000                saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  input external delay                                                        0.40       0.40 r
+  EN_node_1_0_mav_get_packet (in)                                   0.00      0.00       0.40 r
+  EN_node_1_0_mav_get_packet (net)              3         0.02                0.00       0.40 r
+  routers_1_0_out_q_4/DEQ (FIFO2_0000010c_0_110)                              0.00       0.40 r
+  routers_1_0_out_q_4/DEQ (net)                           0.02                0.00       0.40 r
+  routers_1_0_out_q_4/U127/A (SAEDRVT14_INV_4)                      0.00      0.00       0.40 r
+  routers_1_0_out_q_4/U127/X (SAEDRVT14_INV_4)                      0.02      0.02       0.42 f
+  routers_1_0_out_q_4/n390 (net)                4         0.02                0.00       0.42 f
+  routers_1_0_out_q_4/U65/A2 (SAEDRVT14_NR2_MM_4)                   0.02      0.00       0.42 f
+  routers_1_0_out_q_4/U65/X (SAEDRVT14_NR2_MM_4)                    0.07      0.05       0.46 r
+  routers_1_0_out_q_4/n328 (net)                4         0.02                0.00       0.46 r
+  routers_1_0_out_q_4/U126/A (SAEDRVT14_BUF_4)                      0.07      0.00       0.47 r
+  routers_1_0_out_q_4/U126/X (SAEDRVT14_BUF_4)                      0.04      0.06       0.52 r
+  routers_1_0_out_q_4/n331 (net)                5         0.03                0.00       0.52 r
+  routers_1_0_out_q_4/U13/A (SAEDRVT14_BUF_S_2)                     0.04      0.00       0.53 r
+  routers_1_0_out_q_4/U13/X (SAEDRVT14_BUF_S_2)                     0.18      0.15       0.68 r
+  routers_1_0_out_q_4/n307 (net)               10         0.07                0.00       0.68 r
+  routers_1_0_out_q_4/U8/A (SAEDRVT14_BUF_4)                        0.18      0.00       0.68 r
+  routers_1_0_out_q_4/U8/X (SAEDRVT14_BUF_4)                        0.18      0.18       0.86 r
+  routers_1_0_out_q_4/n314 (net)               14         0.14                0.00       0.86 r
+  routers_1_0_out_q_4/U231/B1 (SAEDRVT14_AO222_1)                   0.18      0.01       0.87 r
+  routers_1_0_out_q_4/U231/X (SAEDRVT14_AO222_1)                    0.03      0.10       0.97 r
+  routers_1_0_out_q_4/N137 (net)                1         0.00                0.00       0.97 r
+  routers_1_0_out_q_4/data0_reg_reg_149_/D (SAEDRVT14_FDP_V2_1)     0.03      0.00       0.97 r
+  data arrival time                                                                      0.97
+
+  clock CLK (rise edge)                                                       1.00       1.00
+  clock network delay (ideal)                                                 0.00       1.00
+  routers_1_0_out_q_4/data0_reg_reg_149_/CK (SAEDRVT14_FDP_V2_1)              0.00       1.00 r
+  library setup time                                                         -0.03       0.97
+  data required time                                                                     0.97
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.97
+  data arrival time                                                                     -0.97
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+1

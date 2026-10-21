@@ -1,0 +1,23 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -input_pins
+        -nets
+        -group i2o
+        -max_paths 20
+        -transition_time
+        -capacitance
+Design : mkNoc
+Version: U-2022.12
+Date   : Sat Oct 10 12:01:30 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss0p72v125c   Library: saed14rvt_base_ss0p72v125c
+Wire Load Model Mode: top
+No paths.
+
+1

@@ -1,0 +1,28 @@
+ 
+****************************************
+check_design summary:
+Version:     U-2022.12
+Date:        Fri Sep 18 22:42:04 2026
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      9
+    Unconnected ports (LINT-28)                                     9
+
+Cells                                                               1
+    Nets connected to multiple pins on same cell (LINT-33)          1
+--------------------------------------------------------------------------------
+
+Warning: In design 'FIFO2_00000040_1', port 'CLR' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO2_00000024_1', port 'CLR' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO2_00000062_1', port 'D_IN[63]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO2_00000062_1', port 'D_IN[62]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO2_00000062_1', port 'D_IN[61]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO2_00000062_1', port 'D_OUT_63_' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO2_00000062_1', port 'D_OUT_62_' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO2_00000062_1', port 'D_OUT_61_' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO2_00000062_1', port 'CLR' is not connected to any nets. (LINT-28)
+Warning: In design 'mkDUT', the same net is connected to more than one pin on submodule 'adder_stage1Q'. (LINT-33)
+   Net 'n729' is connected to pins 'D_IN[63]', 'D_IN[62]'', 'D_IN[61]', 'CLR'.
+1

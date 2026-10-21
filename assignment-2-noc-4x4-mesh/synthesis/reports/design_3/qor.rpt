@@ -1,0 +1,111 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'mkNoc' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : qor
+Design : mkNoc
+Version: U-2022.12
+Date   : Sat Oct 10 07:46:27 2026
+****************************************
+
+
+  Timing Path Group 'f2f'
+  -----------------------------------
+  Levels of Logic:              13.00
+  Critical Path Length:          0.97
+  Critical Path Slack:           0.00
+  Critical Path Clk Period:      1.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'f2o'
+  -----------------------------------
+  Levels of Logic:               1.00
+  Critical Path Length:          0.15
+  Critical Path Slack:           0.45
+  Critical Path Clk Period:      1.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'i2f'
+  -----------------------------------
+  Levels of Logic:               6.00
+  Critical Path Length:          0.57
+  Critical Path Slack:           0.00
+  Critical Path Clk Period:      1.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:        128
+  Hierarchical Port Count:      69504
+  Leaf Cell Count:             220172
+  Buf/Inv Cell Count:           25696
+  Buf Cell Count:               20950
+  Inv Cell Count:                4756
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:    151392
+  Sequential Cell Count:        68780
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:    67316.616673
+  Noncombinational Area: 64170.963982
+  Buf/Inv Area:           9131.303899
+  Total Buffer Area:          8078.67
+  Total Inverter Area:        1068.09
+  Macro/Black Box Area:      0.000000
+  Net Area:             354905.860196
+  -----------------------------------
+  Cell Area:            131487.580655
+  Design Area:          486393.440851
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:        239007
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: varaha-eda.cs.iitm.ac.in
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                   98.45
+  Logic Optimization:                438.56
+  Mapping Optimization:             1347.06
+  -----------------------------------------
+  Overall Compile Time:             4351.40
+  Overall Compile Wall Clock Time:  5281.54
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1
